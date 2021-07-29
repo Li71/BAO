@@ -1,0 +1,438 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body
+{
+    scroll-snap-type: x mandatory;
+    /* height: 100vh; */
+    font-family: 'Poppins';
+}
+
+.container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+
+}
+
+
+
+.container section{
+    scroll-snap-stop: always;
+    min-width: 100vw;
+    height: 3000vh;
+    /* display: inline-flex; */
+    /* display: flex; */
+    display: inline-block;
+    justify-content: center;
+    /* align-items: center; */
+    background: #1B2432;
+    
+}
+.container section:nth-child(2){
+    background:#EAF4E2;
+}
+.container section:nth-child(3){
+    background:#2F1400;
+}
+
+.container section .content{
+    text-align: center;
+    padding: 20px;
+}
+
+.container section .content h2{
+    font-size: 4em;
+    color: #111;
+}
+
+.logo{
+    position: fixed;
+    margin-top: 20vh;
+    margin-left: 32.5vw;
+    display: inline-block;
+    z-index: 2000;
+    background: url("img/LOGO_W.png");
+    background-position: center;
+    background-size: cover;
+    width: 30vw;
+    height: 50vh;
+    
+}
+
+.steam-top{
+    z-index: 1000;
+    position: fixed;
+    background: url("img/steam_top.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 32%;
+    height: 65vh;
+}
+
+.steam-but{
+    z-index: 100;
+    position: fixed;
+    background: url("img/steam_but.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 32%;
+    height: 65vh;
+    
+}
+
+
+
+.steam{
+    position: fixed;
+    top: 13vh;
+    margin-left: 31vw;
+    display: inline-block;
+
+}
+
+
+.BG_section1{
+    background: url("img/BG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: inline-block;
+    background-position: center;
+}
+
+.BG_section2{
+    background: url("img/BG2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: inline-block;
+    background-position: center;  
+}
+
+.BG_section3{
+    background: url("img/BG3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    z-index: 50;
+    display: inline-block;
+    background-position: center;  
+}
+
+
+
+#particles-js{
+    z-index: 500;
+    width: 100vw;
+    height: 50vw;
+    /* background-color: #b61924; */
+    background-image: url('');
+    background-size: cover;
+    /* background-position: 50% 50%; */
+    background-repeat: no-repeat;
+  }
+
+canvas{
+    display:block;
+    /* vertical-align:bottom; */
+  }
+  
+
+
+  
+.slogan_text{
+    position: fixed;
+    top: 200px;
+    margin-left: 10vw;
+    max-width: 480px;
+    z-index: 300;
+}
+.white{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    z-index: 200;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.7038165608040091) 10%, rgba(255,255,255,0) 58%);
+}
+
+.passerby{
+
+    position: fixed;
+    top: 300px;
+    width: 100vw;
+    opacity: 0.8;
+    z-index: 100;
+
+}
+
+.anima1{
+    position: fixed;
+    width: 100vw;
+    opacity: 0.8;
+
+}
+
+.go_shop{
+    position: fixed;
+    max-width: 200px;
+    margin-top: 35vh;
+    margin-left: 43vw;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.3), 0px 1px 2px rgba(0,0,0,0.3);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    border-radius: 50% 50% 50% 50%;
+    z-index: 1000;
+  
+}
+
+.go_shop:hover {
+    box-shadow: 15px 14px 35px rgba(0,0,0,0.6), 15px 10px 25px rgba(0,0,0,0.6);
+    border-radius: 50% 50%;
+    z-index: 2500;
+}
+
+#section10 a {
+    padding-top: 60px;
+  }
+
+#section10 a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 30px;
+    height: 50px;
+    margin-left: -15px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    box-sizing: border-box;
+  }
+
+#section10 a span::before {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: #fff;
+    border-radius: 100%;
+    -webkit-animation: sdb10 2s infinite;
+    animation: sdb10 2s infinite;
+    box-sizing: border-box;
+  }
+
+@-webkit-keyframes sdb10 {
+    0% {
+      -webkit-transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      -webkit-transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+@keyframes sdb10 {
+    0% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+
+  #thanks p {
+    color: #333;
+    font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  }
+
+  #thanks p a {
+    color: #333;
+    text-decoration: none;
+    transition: color .3s;
+  }
+
+  #thanks p a:hover {
+    color: #888;
+  }
+
+  .hint_icon{
+    max-width: 2vw;
+    position: fixed;
+    top: 82vh;
+    left: 47vw;
+    animation: slide 3s ease-in-out infinite;
+}
+
+@keyframes slide {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+  
+    50% {
+      transform: translate(0px, 10px);
+    }
+}
+
+
+/* ------------------------------------------------ */
+/* Phone */
+@media(min-width:200px)and (max-width:520px){
+
+    .logo{
+        position: fixed;
+        margin-top: 25vh;
+        margin-left: 12.5vw;
+        display: inline-block;
+        z-index: 2000;
+        background: url("img/LOGO_W.png");
+        background-position: center;
+        background-size: cover;
+        width: 75vw;
+        height: 40vh;
+        
+    }
+
+    #particles-js{
+        z-index: 500;
+        width: 100vw;
+        height: 100vh;
+        /* background-color: #b61924; */
+        background-image: url('');
+        background-size: cover;
+        /* background-position: 50% 50%; */
+        background-repeat: no-repeat;
+      }
+
+    .BG_section1{
+        background: url("img/phone/BG_phone.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        display: inline-block;
+        background-position: center;
+    }
+
+    .steam{
+        position: fixed;
+        top: 18vh;
+        margin-left: 0vw;
+        display: inline-block;
+    }
+
+    .steam-top{
+        z-index: 1000;
+        position: fixed;
+        background: url("img/steam_top.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 55vh;
+    }
+    
+    .steam-but{
+        z-index: 100;
+        position: fixed;
+        background: url("img/steam_but.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 55vh;
+        
+    }
+
+    .BG_section2{
+        background: url("img/phone/BG2_phone.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        display: inline-block;
+        background-position: center;
+        opacity: 0.7;
+        
+    
+    }
+
+    .passerby{
+        margin-left: -20vw;
+        position: fixed;
+        top: 53vh;
+        width: 150vw;
+        opacity: 0.8;
+        z-index: 100;
+    
+    }
+    
+
+    .slogan_text{
+        top: 100px;
+        position: fixed;
+        max-width: 480px;
+        z-index: 300;
+        width: 80vw;
+        
+    }
+
+    .go_shop{
+        margin-left: 27vw;
+    }
+
+}
+
+
+
+/* ------------------------------------------------ */
+/* Pad */
+@media(min-width:520px)and (max-width:1080px){
+    .passerby{
+
+        position: fixed;
+        top: 350px;
+        width: 100vw;
+        opacity: 0.8;
+        z-index: 100;
+    
+    }
+    
+
+    .slogan_text{
+        position: fixed;
+        top: 200px;
+        margin-left: 10vw;
+        max-width: 480px;
+        z-index: 300;
+    }
+}
